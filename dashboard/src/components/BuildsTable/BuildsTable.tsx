@@ -294,7 +294,7 @@ export function BuildsTable({
       status={status}
       error={error}
     >
-      <div className="flex items-center justify-between">
+      <div className="flex flex-wrap items-center justify-between gap-2 md:gap-0">
         <TableStatusFilter filters={filters} onClickBuild={onClickFilter} />
         <DebounceInput
           debouncedSideEffect={onSearchChange}
